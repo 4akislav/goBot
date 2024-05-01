@@ -26,5 +26,5 @@ func GetWeather(locationName string) (Weather, error) {
 	if err != nil {
 		return Weather{}, err
 	}
-	return weatherData, err
+	return weatherData, nil
 }
